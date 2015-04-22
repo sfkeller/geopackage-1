@@ -132,6 +132,8 @@ include::annexes/extension_zoom_other_intervals.adoc[]
 
 include::annexes/extension_tiles_webp.adoc[]
 
+include::annexes/extension_elevation.adoc[]
+
 include::annexes/normref.adoc[]
 
 include::annexes/biblio.adoc[]

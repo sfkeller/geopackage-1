@@ -171,3 +171,24 @@ The "gpkg_webp" extension name SHALL be used as a gpkg_extensions table extensio
 [requirement]
 A GeoPackage that contains tile pyramid user data tables with tile_data columns that contain images in WEBP format SHALL contain a gpkg_extensions table that contains row records with table_name values for each such table, “tile_data” column_name values and extension_name column values of “gpkg_webp”.
 
+[[tile_enc_elevation_tiff]]
+==== Tile Elevation Encoding TIFF
+
+===== Data
+
+This extension of clause <<tiles>> described in <<extension_tiles_elevation_tiff>> allows encoding of tiled gridded elevation data in TIFF format.
+
+===== TIFF MIME Type
+
+A GeoPackage that contains a tile pyramid user data table that contains tile data MAY store tile_data in MIME type image/tiff <<33>>.
+
+====== WEBP -- Extensions Name
+
+[requirement]
+The "gpkg_elevation_tiff" extension name SHALL be used as a gpkg_extensions table extension name column value to specify storage of tiled gridded elevation data in TIFF format as specified in <<extension_tiles_elevation_tiff>>.
+
+====== WEBP -- Extensions Row
+
+[requirement]
+A GeoPackage that contains tile pyramid user data tables with tile_data columns that contain elevation data in TIFF format SHALL contain a gpkg_extensions table that contains row records with table_name values for each such table, “tile_data” column_name values and extension_name column values of “tiff”.
+

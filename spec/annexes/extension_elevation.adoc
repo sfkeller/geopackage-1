@@ -1,0 +1,60 @@
+[[extension_elevation]]
+[appendix]
+== Elevation Encoding with TIFF Tiles Extension (Normative)
+
+[float]
+=== Extension Title
+
+Elevation Encoding with TIFF Tiles
+
+[float]
+=== Introduction
+
+Elevation data may be encoded as a grid of elevation values. GeoPackage already provides a mechanism for storing raster data in tile pyramids. Leveraging this mechanism provides a relatively simple path to supporting elevation data as well. 
+
+This extension enables use of TIFF files to store elevation data in a structure that mirrors the structure used to store tiled raster data. The TIFF format was chosen because it is self-describing, has robust existing software support, and provides desired features such as:
+   * integer and floating point values
+   * compression
+
+[float]
+=== Extension Author
+
+GeoPackage SWG, author_name `gpkg`
+
+[float]
+=== Extension Name or Template
+
+`gpkg_elevation_tiff`
+
+[float]
+=== Extension Type
+
+Extension of Existing Requirements in clause 2.2.
+
+[float]
+=== Applicability
+
+This extension applies to any table listed in the `gpkg_contents` table with a data_type of `elevation-tiles`.
+
+[float]
+=== Scope
+
+Read-write
+
+[float]
+=== Requirements
+
+[float]
+==== GeoPackage
+
+The `data_type` column in the `gpkg_contents` table MAY contain "elevation-tiles".
+
+[float]
+==== GeoPackage SQLite Configuration
+
+None
+
+[float]
+==== GeoPackage SQLite Extension
+
+None
